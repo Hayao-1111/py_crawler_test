@@ -30,9 +30,11 @@ python main.py [-h] [--bvid BVID] [--qn QN] [--needCookie NEEDCOOKIE]
 | `--cookie_path COOKIE_PATH` | Cookie文件的路径 |`Cookie`|
 
 ### 2.1 获取BV号
-为获取B站视频的BV号，可在网页端直接复制地址栏的地址，得到`https://www.bilibili.com/video/BV1JQ4y1e7jV/*`形式的URL。其中，`https://www.bilibili.com/video/`之后的字符串`BV1JQ4y1e7jV`即为视频BV号。
+为获取B站视频的BV号，可在网页端直接复制地址栏的地址，得到`https://www.bilibili.com/video/BV1JQ4y1e7jV/*`形式的URL。其中，`https://www.bilibili.com/video/`之后的字符串`BV1JQ4y1e7jV`即为视频BV号。另一种方法是，在视频的网页端底部直接获取，如动漫《那年那兔那些事》（第一季）第12集的BVID在下图所示的位置。
 
-注意，本程序当前版本尚不支持下载UP主上传视频之外的其他类型的视频，如番剧、电影、直播等。
+![cookie instruction image](images/get_BVID_00.png)
+
+注意，本程序当前版本尚不支持部分难以找到BVID的动漫、电影、直播等。预计下一个版本会增加通过EPID下载番剧、影视的功能。EPID可从视频的URL中（形如 `https://www.bilibili.com/bangumi/play/{ep_id}`）获取，例如，日剧《半泽直树》（第一季）第1集的URL为 `https://www.bilibili.com/bangumi/play/ep351870`，其EPID为`ep351870`。
 
 ### 2.2 视频清晰度参数qn使用说明
 
